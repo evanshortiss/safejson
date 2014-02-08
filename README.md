@@ -23,14 +23,19 @@ CIRCULAR_OBJECT.cref = CIRCULAR_OBJECT;
 var safejson = require('safejson');
 
 safejson.parse(VALID_JSON_STRING, function(err, json) {
-  // err is 'null' as no error would have occured due to valid input
+  // err is null as no error would have occured due to valid input
   // json is a valid JSON object
+});
+
+safejson.stringify(VALID_OBJECT, function(err, json) {
+  // err would be null as the object is valid json
+  // json is a valid json string
 });
 
 safejson.stringify(CIRCULAR_OBJECT, function(err, str) {
   // err would be defined as the object contained a circular reference
   // str is a valid JSON string
-})
+});
 ```
 
 
