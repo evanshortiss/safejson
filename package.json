@@ -1,0 +1,18 @@
+{
+  "name": "safejson",
+  "version": "0.0.0",
+  "description": "Safely parse and stringify JSON.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "safe",
+    "json",
+    "parse",
+    "stringify"
+  ],
+  "author": "Evan Shortiss <evanshortiss@gmail.com>",
+  "license": "MIT"
+}
