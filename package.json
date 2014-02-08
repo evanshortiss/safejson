@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
+  "homepage": "https://github.com/evanshortiss/safejson",
+  "repository": "git@github.com:evanshortiss/safejson.git",
   "keywords": [
     "safe",
     "json",

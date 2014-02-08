@@ -1,8 +1,10 @@
-# safejson
+safejson
+===
 
 Concise library to parse and stringify JSON without the need for try catch. Simply use the standard pattern of providing a function with parameters and a callback that takes an error as the first parameter and result as the second.
 
 ## Trivial Example
+
 ```
 // Valid JSON object that will stringify
 var VALID_OBJECT = {
