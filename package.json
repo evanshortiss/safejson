@@ -1,7 +1,7 @@
 {
   "name": "safejson",
   "version": "0.0.0",
-  "description": "Safely parse and stringify JSON.",
+  "description": "Safely parse and stringify JSON using node style callbacks.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
