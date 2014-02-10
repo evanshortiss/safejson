@@ -1,4 +1,3 @@
-
 var DEFAULT_SPACES = 0,
   DEFAULT_REPLACER = null,
   DEFAULT_REVIVER = null;
