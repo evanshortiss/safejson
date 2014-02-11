@@ -36,7 +36,7 @@ safejson.stringify(VALID_OBJECT, function(err, json) {
 
 safejson.stringify(CIRCULAR_OBJECT, function(err, str) {
   // err would be defined as the object contained a circular reference
-  // str is a valid JSON string
+  // str null
 });
 ```
 
