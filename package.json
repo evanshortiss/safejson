@@ -1,8 +1,8 @@
 {
   "name": "safejson",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Safely parse and stringify JSON using node style callbacks.",
-  "main": "index.js",
+  "main": "safejson.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +14,6 @@
     "parse",
     "stringify"
   ],
-  "author": "Evan Shortiss",
+  "author": "Evan Shortiss <evanshortiss@gmail.com>",
   "license": "MIT"
 }

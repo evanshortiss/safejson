@@ -36,14 +36,18 @@ safejson.stringify(VALID_OBJECT, function(err, json) {
 
 safejson.stringify(CIRCULAR_OBJECT, function(err, str) {
   // err would be defined as the object contained a circular reference
-  // str null
+  // str would equal null
 });
 ```
 
 
 ## Methods
 #### safejson.stringify(value[, replacer [, space]], callback)
-Does the job of JSON.stringify but handles exceptions for you. Supports all the usual JSON.stringify parameters, including the optional *replacer* and *spaces*, but the last parameter must always be a callback function.
+Does the job of JSON.stringify but handles exceptions for you. Supports all the usual JSON.stringify parameters, including the optional *replacer* and *spaces*. The last parameter must always be a callback function and is not optional.
 
 #### safejson.parse(str[, reviver], callback)
-Does the job of JSON.parse but handles exceptions for you. Supports all the usual JSON.parse parameters, but the last parameter must always be a callback function.
+Does the job of JSON.parse but handles exceptions for you. Supports all the usual JSON.parse parameters. The last parameter must always be a callback function and is not optional.
+
+
+## Tests
+Tests can be run using mocha on the _tests/node.js_ file. Browser tests can be run by opening the _tests/browser/index.html_ file.

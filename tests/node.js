@@ -1,5 +1,5 @@
 var assert = require('assert'),
-  safejson = require('./index.js');
+  safejson = require('../safejson.js');
 
 
 // Valid JSON object that will stringify
