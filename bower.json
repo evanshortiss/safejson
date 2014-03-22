@@ -1,7 +1,7 @@
 {
   "name": "safejson",
   "main": "safejson.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/evanshortiss/safejson",
   "authors": [
     "Evan Shortiss <evanshortiss@gmail.com>"
@@ -20,6 +20,7 @@
   "ignore": [
     "node_modules",
     "bower_components",
-    "tests"
+    "tests",
+    "package.json"
   ]
 }

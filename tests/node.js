@@ -17,28 +17,56 @@ CIRCULAR_OBJECT.cref = CIRCULAR_OBJECT;
 
 var VALID_JSON_STRING = JSON.stringify(VALID_OBJECT);
 
+function validStringify(done) {
+  safejson.stringify(VALID_OBJECT, function(err, str) {
+    assert.equal(err, null);
+    assert(typeof str === 'string');
+
+    if(done) {
+      done();
+    }
+  });
+}
+
+function circularStringify(done) {
+  safejson.stringify(CIRCULAR_OBJECT, function(err, str) {
+    assert.notEqual(err, null);
+    assert.equal(str, null);
+
+    if(done) {
+      done();
+    }
+  });
+}
+
+function validParse(done) {
+  safejson.parse(VALID_JSON_STRING, function(err, json) {
+    assert.equal(err, null);
+    assert.notEqual(json, null);
+    assert.equal(json.age, VALID_OBJECT.age);
+
+    if(done) {
+      done();
+    }
+  });
+}
+
 describe('Test the safejson library', function() {
 
   it('Should stringify witout any errors', function() {
-    safejson.stringify(VALID_OBJECT, function(err, str) {
-      assert.equal(err, null);
-      assert(typeof str === 'string');
-    });
+    validStringify();
   });
-
   it('Should fail to stringify due to circular reference', function() {
-    safejson.stringify(CIRCULAR_OBJECT, function(err, str) {
-      assert.notEqual(err, null);
-      assert.equal(str, null);
-    });
+    circularStringify();
   });
-
-
   it('Should parse to an Object', function() {
-    safejson.parse(VALID_JSON_STRING, function(err, json) {
-      assert.equal(err, null);
-      assert.notEqual(json, null);
-      assert.equal(json.age, VALID_OBJECT.age);
-    });
+    validParse();
   });
+
+  // Defer calls
+  safejson.defer = true;
+
+  it('Should stringify witout any errors', validStringify);
+  it('Should fail to stringify due to circular reference', circularStringify);
+  it('Should parse to an Object', validParse);
 });
