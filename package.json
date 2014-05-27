@@ -1,11 +1,12 @@
 {
   "name": "safejson",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Safely parse and stringify JSON using node style callbacks.",
-  "main": "safejson.js",
+  "main": "dist/safejson.js",
   "scripts": {
-    "test": "mocha tests/node.js"
+    "test": "mocha --ui bdd"
   },
+  "issues": "https://github.com/evanshortiss/safejson/issues",
   "homepage": "https://github.com/evanshortiss/safejson",
   "repository": "git@github.com:evanshortiss/safejson.git",
   "keywords": [
@@ -14,6 +15,28 @@
     "parse",
     "stringify"
   ],
-  "author": "Evan Shortiss <evanshortiss@gmail.com>",
-  "license": "MIT"
+  "testling": {
+    "harness": "mocha-bdd",
+    "files": "test/*.js",
+    "browsers": [
+      "ie/8..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/4..latest",
+      "opera/11.0..latest",
+      "iphone/6..latest",
+      "ipad/6..latest",
+      "android-browser/latest"
+    ]
+  },
+  "author": "Evan Shortiss",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "~4.1.5",
+    "grunt": "~0.4.5",
+    "grunt-browserify": "~2.1.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-mocha-test": "~0.10.2"
+  }
 }

@@ -1,11 +1,12 @@
 {
   "name": "safejson",
   "main": "safejson.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/evanshortiss/safejson",
   "authors": [
     "Evan Shortiss <evanshortiss@gmail.com>"
   ],
+  "main": "dist/safejson.js",
   "description": "Safely parse and stringify JSON using node style callbacks.",
   "keywords": [
     "safe",
