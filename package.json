@@ -2,7 +2,7 @@
   "name": "safejson",
   "version": "0.0.4",
   "description": "Safely parse and stringify JSON using node style callbacks.",
-  "main": "dist/safejson.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "mocha --ui bdd"
   },

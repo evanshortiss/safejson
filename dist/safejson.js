@@ -66,7 +66,7 @@ process.chdir = function (dir) {
 },{}],2:[function(_dereq_,module,exports){
 (function (process){
 // Determines wether actions should be deferred for processing
-exports.defer = true;
+exports.defer = false;
 
 
 /**

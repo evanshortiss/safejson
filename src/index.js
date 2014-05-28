@@ -1,5 +1,5 @@
 // Determines wether actions should be deferred for processing
-exports.defer = true;
+exports.defer = false;
 
 
 /**
