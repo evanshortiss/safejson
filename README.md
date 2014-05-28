@@ -1,11 +1,11 @@
 safejson
 ===
 
+Concise library to parse and stringify JSON without the need for try catch. Simply use the standard pattern of providing a function with parameters and a callback that takes an error as the first parameter and result as the second.
+
 ## Browser Support
 [![browser support](https://ci.testling.com/evanshortiss/safejson.png)
 ](https://ci.testling.com/evanshortiss/safejson)
-
-Concise library to parse and stringify JSON without the need for try catch. Simply use the standard pattern of providing a function with parameters and a callback that takes an error as the first parameter and result as the second.
 
 ## Example (Parse)
 

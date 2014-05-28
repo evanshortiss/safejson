@@ -4,7 +4,7 @@
   "version": "0.0.4",
   "homepage": "https://github.com/evanshortiss/safejson",
   "authors": [
-    "Evan Shortiss <evanshortiss@gmail.com>"
+    "Evan Shortiss"
   ],
   "main": "dist/safejson.js",
   "description": "Safely parse and stringify JSON using node style callbacks.",
