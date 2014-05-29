@@ -1,6 +1,6 @@
 {
   "name": "safejson",
-  "main": "safejson.js",
+  "main": "./dist/safejson.js",
   "version": "1.0.0",
   "homepage": "https://github.com/evanshortiss/safejson",
   "authors": [
