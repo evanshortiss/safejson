@@ -7,9 +7,20 @@ Concise library to parse and stringify JSON without the need for try catch. Simp
 [![browser support](https://ci.testling.com/evanshortiss/safejson.png)
 ](https://ci.testling.com/evanshortiss/safejson)
 
+## Install
+
+```bash
+npm install safejson --save
+```
+
+```bash
+bower install safejson --save
+```
+
+
 ## Example (Parse)
 
-```
+```javascript
 var VALID_JSON_STRING = JSON.stringify(VALID_OBJECT);
 
 
@@ -21,7 +32,7 @@ safejson.parse(VALID_JSON_STRING, function(err, json) {
 ```
 
 ## Example (Stringify)
-```
+```javascript
 // Valid JSON object that will stringify
 var VALID_OBJECT = {
   name: 'evan',
@@ -47,13 +58,13 @@ safejson.stringify(CIRCULAR_OBJECT, function(err, str) {
 
 ```
 
+## Configs
+#### safejson.defer = {Boolean}
+If true the parsing of JSON will be briefly deffered. This uses process.nextTick in Node.js and the appropriate browser shim (setTimeout for example) where necessary.
+
 ## Methods
 #### safejson.stringify(value[, replacer [, space]], callback)
 Does the job of JSON.stringify but handles exceptions for you. Supports all the usual JSON.stringify parameters, including the optional *replacer* and *spaces*. The last parameter must always be a callback function and is not optional.
 
 #### safejson.parse(str[, reviver], callback)
 Does the job of JSON.parse but handles exceptions for you. Supports all the usual JSON.parse parameters. The last parameter must always be a callback function and is not optional.
-
-
-## Tests
-Tests can be run using mocha on the _tests/node.js_ file. Browser tests can be run by opening the _tests/browser/index.html_ file.

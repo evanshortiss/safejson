@@ -1,6 +1,6 @@
 {
   "name": "safejson",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Safely parse and stringify JSON using node style callbacks.",
   "main": "src/index.js",
   "scripts": {

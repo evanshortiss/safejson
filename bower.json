@@ -1,7 +1,7 @@
 {
   "name": "safejson",
   "main": "safejson.js",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "homepage": "https://github.com/evanshortiss/safejson",
   "authors": [
     "Evan Shortiss"
