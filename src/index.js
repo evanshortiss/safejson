@@ -1,3 +1,5 @@
+'use strict';
+
 // Determines wether actions should be deferred for processing
 exports.defer = false;
 

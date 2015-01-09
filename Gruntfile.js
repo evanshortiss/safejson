@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     mochaTest: {
       test: {
         options: {
-          reporter: 'nyan',
+          reporter: 'spec',
           quiet: false
         },
         src: ['./test/*'],
@@ -17,45 +17,10 @@ module.exports = function(grunt) {
 
     jshint: {
       files: {
-        src: [
-          './src/*.js',
-        ]
+        src: ['./src/*.js']
       },
       options: {
-        globals: {},
-        'curly': true,
-        'camelcase': false,
-        'evil': false,
-        'browser': true,
-        'trailing': true,
-        'sub': true,
-        'eqeqeq': false,
-        'eqnull': true,
-        'devel': false,
-        'smarttabs': false,
-        'laxbreak': false,
-        'laxcomma': true,
-        'jquery': false,
-        'loopfunc': true,
-        'indent': 4,
-        'bitwise': true,
-        'noarg': true,
-        'noempty': true,
-        'nonew': true,
-        'undef': true,
-        'boss': true,
-        'node': true,
-        'newcap': true,
-        'quotmark': 'single',
-        'unused': true,
-        'strict': false,
-        'maxparams': 0,
-        'maxdepth': 5,
-        'maxstatements': 20,
-        'maxcomplexity': 14
-      },
-      files: {
-        src: './src/index.js'
+        jshintrc: './.jshintrc'
       }
     },
 
